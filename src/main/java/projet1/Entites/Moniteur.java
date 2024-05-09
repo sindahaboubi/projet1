@@ -1,12 +1,18 @@
 package projet1.Entites;
 
 import jakarta.persistence.*;
+import lombok.*;
 
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Set;
 
 @Entity
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
 public class Moniteur implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id

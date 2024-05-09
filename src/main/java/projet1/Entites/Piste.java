@@ -1,10 +1,16 @@
 package projet1.Entites;
 
 import jakarta.persistence.*;
+import lombok.*;
 
 import java.util.Set;
 
 @Entity
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
 public class Piste {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
